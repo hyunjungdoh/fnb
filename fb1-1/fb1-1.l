@@ -7,7 +7,7 @@
 %%
 
 [a-zA-Z]+	{ words++; chars += strlen(yytext); }
-\n		{ chars++; lines++; }
+\n 		{ chars++; lines++; }
 .		{ chars++; }
 
 %%
